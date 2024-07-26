@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silly Story Generator</title>
+
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/script.js" defer></script>
+</head>
+<body class="flex-col">
+  <header>
+    <h1>Silly Story Generator</h1>
+  </header>
+  <main>
+    <form action="" class="flex-col">
+      <fieldset class="flex-col">
+        <legend>Game setup</legend>
+        <label for="charNameInp">Enter character name:</label>
+        <input type="text" name="" id="charNameInp" placeholder="Random">
+        <div>
+          <input type="radio" name="storyType" id="fantasyType" value="fantasy" checked>
+          <label for="fantasyType">Fantasy</label>
+        </div>
+        <div>
+          <input type="radio" name="storyType" id="sciFiType" value="sci-fi">
+          <label for="sciFiType">Sci Fi</label>
+        </div>
+      </fieldset>
+      <button id="submitBtn">Submit</button>
+    </form>
+    <div id="storyBoard">
+      <p></p>
+    </div>
+  </main>
+  <footer>
+    <p>By Iyola Oyabiyi</p>
+  </footer>
+</body>
+</html>

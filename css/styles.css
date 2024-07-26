@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  font-size: 10px;
+}
+.flex-col {
+  display: flex;
+  flex-flow: column;
+}
+.flex-row {
+  display: flex;
+  flex-flow: row;
+}
+body {
+  font-family: Montserrat;
+  font-size: 1.6rem;
+  align-items: center;
+  padding: 10rem;
+  gap: 4rem;
+}
+h1 {
+  font-size: clamp(1.4rem, 5vw, 4rem);
+}
+main {
+  width: clamp(100px, 100%, 800px);
+}
+form {
+  gap: 2rem;
+}
+fieldset {
+  max-width: 100%;
+  padding: 1rem;
+  gap: 1rem;
+}
+legend {
+  padding: 0.5rem;
+}
+input {
+  padding: 0.5rem 1rem;
+  font-size: 1.6rem;
+  border: 1px solid #001010;
+  border-radius: 5px;
+}
+input:focus {
+  outline: none;
+  border: 2px solid #00ffff;
+}
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 0.8rem 1rem;
+  font-size: 1.8rem;
+  border: none;
+  background: #005f5f;
+  color: #eeffff;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 10px;
+}
+#storyBoard {
+  display: none;
+  margin-top: 2rem;
+  background: #00ffff;
+  padding: 2rem;
+}
+#storyBoard p {
+  line-height: 1.6;
+}
+#storyBoard p span {
+  font-weight: bold;
+}
+@media screen and (max-width: 500px) {
+  body {
+    padding: 5rem 2rem;
+  }
+}
+@media screen and (max-width: 250px) {
+  body {
+    padding: 3rem 0;
+  }
+  fieldset {
+    padding: 0;
+  }
+  #storyBoard {
+    padding: 1rem;
+  }
+}
